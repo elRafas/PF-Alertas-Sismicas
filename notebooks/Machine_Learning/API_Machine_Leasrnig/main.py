@@ -27,4 +27,9 @@ nuevos_datos["labels_pred"] = labels_pred
 print(labels_pred)
 print(nuevos_datos)
 
-
+@app.get("/peliculas_mes/{mes}")
+def peliculas_mes(mes: str):
+    
+    
+    return {'mes':mes  }
+    
